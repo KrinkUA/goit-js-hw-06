@@ -16,7 +16,7 @@ const images = [
   },
 ];
 
-const galleryList = document.querySelector("#gallery");
+const galleryList = document.querySelector(".gallery");
 
 const elements = images
   .map(
@@ -27,3 +27,4 @@ const elements = images
 
 console.log(elements);
 galleryList.insertAdjacentHTML("beforeend", elements);
+galleryList.setAttribute("style", "list-style-type:none; display: flex;");
